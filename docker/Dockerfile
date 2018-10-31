@@ -19,7 +19,7 @@ RUN rm -f /etc/nginx/sites-enabled/default
 ENV LANGUAGE en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
-ENV TZ=ETC/UTC
+ENV TZ ETC/UTC
 RUN locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 
 # add our default config and allow subsequent builds to add a different one
