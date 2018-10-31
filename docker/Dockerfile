@@ -13,7 +13,7 @@ VOLUME /srv/graphite
 RUN apt-get update && apt-get upgrade -y
 
 # Dependencies
-RUN apt-get install -y language-pack-en python-virtualenv libcairo2-dev nginx memcached python-dev libffi-dev
+RUN apt-get install -y language-pack-en python-virtualenv libcairo2-dev nginx memcached python-dev libffi-dev tzdata
 RUN rm -f /etc/nginx/sites-enabled/default
 
 ENV LANGUAGE en_US.UTF-8
