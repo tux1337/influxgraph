@@ -22,7 +22,6 @@ ENV LC_ALL en_US.UTF-8
 RUN locale-gen en_US.UTF-8 && dpkg-reconfigure locales
 
 ENV TZ Etc/UTC
-#RUN echo "Etc/UTC" > /etc/timezone
 
 # add our default config and allow subsequent builds to add a different one
 ADD graphite-api.yaml /etc/graphite-api.yaml
